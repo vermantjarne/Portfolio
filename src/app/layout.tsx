@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import React from 'react';
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
@@ -16,12 +17,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
         <div className="flex flex-col min-h-screen">
           <Navbar />
-          <main className="flex flex-grow justify-center min-h-full" style={{backgroundColor: "#FFFFF7"}}>
+          <main className="relative flex flex-grow justify-center min-h-full py-8 px-4" style={{backgroundColor: "#FFFFF7"}}>
             {children}
           </main>
           <Footer />

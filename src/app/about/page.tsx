@@ -13,7 +13,7 @@ const about = () => {
                     Besides developing, my main interests consist of 
                     <span className="highlight"> photography</span> and <span className="highlight">music</span>.
                     I enjoy <span className="highlight">traveling</span> and learning new skills to utilize in my <span className="highlight">daily life</span>.</p>
-                <a href="/files/Resume.pdf" className="w-fit rounded-lg text-white bg-gray-700 py-3 px-5 hover:bg-gray-800 transition duration-300">
+                <a href="/files/Resume.pdf" className="w-fit rounded-xl border-gray-400 border-2 bg-gray-200 py-2 px-6 hover:bg-gray-300 transition duration-300">
                     Resume
                 </a>
             </div>
