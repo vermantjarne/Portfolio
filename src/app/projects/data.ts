@@ -2,38 +2,79 @@ import { Project } from "../types";
 
 export const projects: Project[] = [
     {
-        id: "biking_club_prototype",
-        title: "Biking Club Prototype Website",
-        shortDescription: "This is a test project.",
-        imageNames: ["cover"],
+        id: "monsters_of_the_night",
+        title: "Monsters of the Night (App)",
+        shortDescription: "A React application for a custom designed social deduction game named Monsters of the Night, heavily inspired by Blood on the Clocktower.",
+        imageNames: ["cover", "image-1", "image-2", "image-3"],
+        tags: ["React"],
+        introduction:
+            `At the time of learning how to create <strong>mobile apps</strong> using <strong>React</strong>, my family had been enjoying the game <strong>Werewolves</strong> a lot. Upon doing more research on the topic of <strong>social deduction games</strong>, I stumbled upon a game named <strong>Blood on the Clocktower</strong>. This is another social deduction game played in-person, heavily praised for its ingenious design.\n
+            That game contains a <strong>narrator</strong>, who guides the entire story. At the start of the game, players are randomly assigned a character with the role of <strong>townsfolk</strong>, <strong>neutral</strong>, <strong>minion</strong> or <strong>monster</strong>. Each of these roles has several characters that can be chosen from, each with their own <strong>unique game mechanics</strong>. Every night, the narrator <strong>wakes up</strong> the townsfolk in a certain order, by tapping their shoulder. Every day, the townsfolk get together and <strong>vote</strong> on who they presume is the monster. If the monster is voted out, the townsfolk win. If the monster outlives the townsfolk, the evil team wins.\n
+            With the <strong>complexity</strong> that comes with playing and narrating this game, I saw my opportunity to utilize my newly learned development skills to create a mobile app using React.`,
+        description:
+            `Monsters of the Night is a game in the genre of social deduction. The app is used as a <strong>tool</strong> to make the task of the <strong>host</strong> easier during the gameplay. Social deduction games similar to this often have a <strong>specific order</strong> in which characters must be awoken at night and sequences in which events must be played out. However, with distinctly chosen characters comes a distinct order of events.\n
+            The app allows the host to input the <strong>number of players</strong> at the start. After this, the host selects the <strong>roles</strong> for each player. The game is then initiated, dictating the order of events on screen. Depending on the actions taken, players are <strong>eliminated</strong>, meaning they no longer show up in the event sequence if their character has no actions. Once a <strong>win condition</strong> is met, the game ends, showing the winning team in the app.`,
+        personalGrowth:
+            `While working on this project, I've been able to learn a lot more about the functional side of making <strong>mobile applications</strong>. The <strong>restrictions</strong> for <strong>mobile screens</strong> are a lot different than they are for computer screens, due to the <strong>limited space</strong> available.\n
+            Additionally, I've been able to expand upon my knowledge of <strong>React</strong> and <strong>React Native</strong>. I have really enjoyed programming with React Native during classes, and the self-educational experience has been nothing short of insightful. It has helped me develop more <strong>practical knowledge</strong> of how to utilize the key elements taught to us in class. On top of that, I have been able to broaden the scope of possibilities by learning additional functionalities to use.`,
+        contributors: ["Jarne Vermant"],
+    },
+    {
+        id: "swimming_club_prototype",
+        title: "Swimming Club Prototype Website",
+        shortDescription: "An analysis document and prototype for a fictional swimming club, in order for them to digitalize their way of working in the club.",
+        imageNames: ["cover", "image-1", "image-2"],
         tags: ["School", "Prototype"],
+        introduction:
+            `In a <strong>team of 7</strong>, we were tasked with creating a prototype for the subject <strong>Requirements Analysis</strong>, during a <strong>project week</strong>. This prototype would be that of a <strong>web application</strong> for a <strong>swimming club</strong>. This club used Excel sheets to manage their sign-ups and documentation, and they desired an upgrade to their way of working.\n
+            One of the teachers of the subject <strong>Professional Skills 2</strong> posed as the <strong>client</strong>, who we were in contact with to discuss the necessary and requested features on the web application. Additionally, we were guided by the <strong>coach</strong> of the project week to correctly design the <strong>data model</strong> and prototype. It was important that this was done well, as another team would have to use this as the foundation of a project during the upcoming semester.`,
+        description:
+            `As a team, we developed an <span class="highlight">analysis and design report</span> on our project, for the subject 'Requirements Analysis'. The project consisted of making a <span class="highlight">prototype of a web application</span> for a swimming club, as an upgrade from using Excel sheets for their documentation. This would <span class="highlight">digitalize</span> their system, allowing for a faster and more responsive workspace.\n
+            I took on the role of <strong>project lead</strong>. I ensured that everyone was doing their part, and <strong>progress</strong> was being made accordingly. I had to <strong>monitor</strong> the entire team to keep us on track. I worked on the <strong>data model</strong> with the rest of the team. I've also created a lot of the <strong>use cases</strong> and cooperated on the <strong>prototype screens</strong>.`,
+        personalGrowth:
+            `Thanks to my position on this team, I learned how to <strong>delegate tasks</strong> to others as a team leader. It has helped me a lot in understanding what the necessary <strong>personality traits</strong> are that a good leader should have.\n
+            It was one of the first school projects I've done on a large-scale team. Naturally, I also learned how to cooperate with other people on a single goal. I have also learned new <strong>practical skills</strong> for working on applications. It has taught me how to approach <strong>prototypes</strong> and <strong>project planning</strong> as a team.`,
+        contributors: ["Jarne Vermant", "Renzo Bastanie", "Pim Clement", "Fjodor Everaerts", "Manu Kempen", "Thijs Verdonck", "Senne Vissers"]
     },
     {
         id: "soccer_club",
         title: "Soccer Club Website",
-        shortDescription: "This is a test project.",
-        imageNames: ["cover"],
+        shortDescription: "A PHP web application for a fictional soccer club named KVV Rauw, in which they are able to view their calendar, sign up for carpools, view photos and more.",
+        imageNames: ["cover", "image-2"],
         tags: ["School", "PHP"],
-    },
-    {
-        id: "monsters_of_the_night",
-        title: "Monsters of the Night (App)",
-        shortDescription: "A React application for a custom designed social deduction game named Monsters of the Night, heavily inspired by Blood on the Clocktower.",
-        imageNames: ["cover", "cover-photo"],
-        tags: ["React"],
         introduction:
-            `At the time of learning how to create <strong>mobile apps</strong> using <strong>React</strong>, my family had been enjoying the game <strong>Werewolves</strong> a lot. Upon doing more research on the topic of <strong>social deduction games</strong>, I stumbled upon a game named <strong>Blood on the Clocktower</strong>. This is another social deduction game played in-person, heavily praised for its ingenious design.\n
-            That game contains a narrator, who guides the entire story. At the start of the game, some players are randomly assigned a character with the role of townsfolk, neutral, minion or monster. Each of these roles has several characters that can be chosen from, each with their own unique game mechanics. Every night, the narrator wakes up the townsfolk in a certain order, by tapping their shoulder. Every day, the townsfolk get together and vote on who they presume is the monster. If the monster is voted out, the townsfolk win. If the monster outlives the townsfolk, the evil team wins.\n
-            With the complexity that comes with playing and narrating this game, I saw my opportunity to utilize my newly learned development skills to create a mobile app using React.`,
+            `One of my current subjects in school is <strong>Project PHP</strong>. This is a subject with a single main goal: developing the <strong>web application</strong> for a <strong>soccer club</strong> named KVV Rauw, in <strong>PHP</strong>. I am doing so together with 6 other students. The task is the follow-up of the analysis document and prototype made by another group of students. That was made for the same subject as another project I've worked on: <a href="swimming_club_prototype" class="text-blue-700 font-bold">Swimming Club Prototype Website</a>. The knowledge required to create this application was taught to us in a previous subject in class named <strong>Web Applications in PHP</strong>.\n
+            The concept is similar to that of the swimming club. In this soccer club, they use pen and paper for their documentation, and would like to move away to an online application. One of our teachers of the subject <strong>Professional Skills 2</strong> takes on the role of the <strong>client</strong>. We have been able to communicate with them to discuss the needs for the web application.`,
         description:
-            `Monsters of the Night is a game in the genre of social deduction. The app is used as a <strong>tool</strong> to make the task of the <strong>host</strong> easier during the gameplay. Social deduction games similar to this often have a <strong>specific order</strong> in which characters must be awoken at night and sequences in which events must be played out. However, with distinctly chosen characters comes a distinct order of events.\n
-            The app allows the host to input the <strong>number of players</strong> at the start. After this, the host selects the <strong>roles</strong> for each player. The game is then initiated, dictating the order of events on screen. Depending on the actions taken, players are <strong>eliminated</strong>, meaning they no longer show up in the event sequence if their character has no actions. Once a <strong>win condition</strong> is met, the game ends, showing the winning team in the app.`
+            `As stated before, the goal of this project is to create a web application in PHP. To achieve this, we have used <strong>Laravel</strong>, together with <strong>Livewire</strong>, as a PHP framework, alongside <strong>Tailwind</strong> for the styling. This has made it very easy for us to make a functional application with convenient styling methods. To follow up on our <strong>planned tasks</strong>, we use a <strong>Jira</strong> board. We are able to plan and assign tasks as we see fit.\n
+            Concretely, I have contributed a few things so far. Firstly, I discussed the <strong>data model</strong>, together with the others, to ensure it makes sense. After another team member had programmed the logic that implements the data model, I have improved it where necessary. Following that, I have worked on the <strong>gallery page</strong>. This page includes a lot of new functionalities, such as <strong>uploading</strong> and <strong>storing images</strong>, as well as <strong>enlarging</strong> them in a custom <strong>carousel</strong>. On top of this, I have been helping teammates with creating cohesive logic for the entire application. In the coming weeks, I will be improving the <strong>layout</strong> of the website, to make it more visually appealing.`,
+        personalGrowth:
+            `I have expanded my knowledge of <strong>PHP</strong> a lot during this teamwork. My understanding of both <strong>Laravel</strong> and <strong>Livewire</strong> has improved significantly. I have grown to be able to make simple <strong>CRUDs</strong>, basic functionalities, quite efficiently. I am now capable of utilizing Laravel Livewire solidly, to create PHP applications myself.\n
+            The <strong>collaboration</strong> and <strong>communication</strong> between us as a <strong>team</strong> have been nothing short of amazing. This has caused me to grow a good understanding of what a good team entails. I have always been able to ask for help from my teammates, who are more than willing to provide it where necessary. We are well up-to-date on what the remaining tasks are and what everyone is actively working on.\n
+            My ability to work with <strong>online resources</strong> and <strong>AI</strong> has also improved. During the first few weeks, I ensured I understood the course content well. Seeing as we use a more recent version of Laravel than ChatGPT is used to, it was often also necessary to consult the course later on, as well as other available online resources. My <strong>prompting</strong> skills have elevated through this experience as well, knowing what to ask and which information is important for the AI.`,
+        contributors: ["Jarne Vermant", "Gilles Bosmans", "Mohammed Hamioui", "Jorrit Janssens", "Ilias Latifine", "Jorrit Leysens", "Hamza Qurayshi"]
     },
     {
         id: "language_game",
         title: "Language Game (AR)",
-        shortDescription: "This is a test project.",
-        imageNames: ["cover"],
+        shortDescription: "A Flutter and Wikitude application for a custom designed augmented reality game, in which players collect words and guess their languages to score points.",
+        imageNames: ["cover", "image-1", "image-2", "image-3", "image-4", "image-5", "image-6"],
         tags: ["School", "Flutter", "Wikitude"],
+        introduction:
+            `This project was our only evaluation for the subject <strong>Mobile Development & Augmented Reality</strong>. This took place in a small team of 2. We were given a lot of freedom for the project. Our main requirement was building a <strong>mobile application</strong> that integrates <strong>augmented reality (AR)</strong>.\n
+            For the type of AR, we were allowed to use any of the following: image recognition, geolocation, object/scene recognition and markerless tracking. We were actively discussing several ideas, as we could decide on the subject matter ourselves, before starting work on the project, and eventually landed on a <strong>language guessing game</strong> based on <strong>geolocation</strong>. Additionally, we had to use an <strong>API</strong> to communicate with the AR functionality. The remaining scores were given based on the <strong>professionality</strong> of both the application and the code.\n
+            The <strong>concept</strong> of the game is <strong>finding</strong> words, then <strong>guessing the language</strong>. This is a concept I came up with. The words are located virtually <strong>within</strong> the player's <strong>world</strong>. At any point, the player can decide to guess the language of all collected words. If correct, the player will be <strong>awarded points</strong> based on the amount of words collected. The player can also choose to <strong>remove</strong> any of the collected words, if they believe that they are not of the same language as the other words. The player is also always able to view a list of their <strong>correctly guessed words</strong>, alongside which language they belong to.\n
+            We believe that this app could be used to <strong>teach languages</strong> in a fun and exciting way, through the help of augmented reality. Ultimately, that was our main goal in designing a concept: creating a <strong>purposeful</strong> application.`,
+        description:
+            `During the classes, we were taught how to use <strong>Flutter</strong>. This is a <strong>UI toolkit</strong>, allowing accessible and good-looking mobile applications. Additionally, we had been guided on how to implement <strong>Wikitude</strong> into a Flutter app. This granted us the possibility of developing an augmented reality app, used alongside the Flutter app.\n
+            We have divided the tasks between us. <strong>Ilias</strong> was responsible for the <strong>Wikitude</strong> application. <strong>I</strong> took on the <strong>Flutter</strong> app, including the different <strong>pages</strong> and the <strong>API</strong>.\n
+            The app consists of <strong>4 pages</strong>. On the 'home' page, the player is greeted and able to see their current points. The 'word list' page is accessible at any point as well, showing all previous guessed words. Upon collecting words, those words are shown under the 'collected words' page. From there, the player can navigate to the 'guess language' page. Here, the player is able to select a language from the list of participating languages.\n
+            I created <strong>models</strong> for language and word, so these can be defined and reused throughout the application. I've also developed the <strong>API service</strong>, allowing the <strong>modification of data</strong> stored in the <strong>database</strong>. For this application, that database consisted of a <strong>JSON file</strong>, containing available words, correctly guessed words and the number of points collected.`,
+        personalGrowth:
+            `I have grown a lot as a <strong>team member</strong> and <strong>developer</strong> overall during the project. Working in a team of 2 is vastly different from working with multiple others. You have exactly one other person who you <strong>rely</strong> on, and who relies on you as well. This meant that the <strong>communication</strong> between us needed to be clear.\n
+            While we did indeed communicate well, we lacked on the <strong>planning</strong> department. This caused some <strong>stress</strong> on whether or not we would meet the <strong>deadline</strong>. We discussed it together, and went over the remaining tasks. This allowed us to have a good overview on what was remaining to be done on the project, and helped greatly to reduce the necessary stress.\n
+            To ensure we would meet the deadline, I also learned to work more towards an <strong>MVP</strong>, or <strong>minimum viable product</strong>. This means I would work on getting the <strong>bare functionalities</strong> in place, after which I would focus on the <strong>contents</strong> and <strong>layouts</strong>. This creates a much clearer <strong>awareness</strong> of the remaining tasks and timeline.\n
+            During the creation of the Flutter application, I was able to expand my <strong>understanding</strong> of <strong>APIs</strong> and how they can be <strong>used correctly</strong>. Knowing which code belongs to the page and which code belongs to the API is of great importance in creating <strong>web applications</strong> in the future.`,
+        contributors: ["Jarne Vermant", "Ilias Latifine"]
     },
 ];

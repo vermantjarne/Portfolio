@@ -7,16 +7,19 @@ export type ProjectTag =
     'Wikitude';
 
 
-export interface Paragraphs {
+export interface ProjectDetails {
     introduction?: string;
     description?: string;
+    personalGrowth?: string;
+    contributors?: string[];
 }
 
 
-export interface Project extends Paragraphs {
+export interface Project extends ProjectDetails {
     id: string;
     title: string;
     shortDescription: string;
     imageNames: string[];
     tags: ProjectTag[];
 }
+

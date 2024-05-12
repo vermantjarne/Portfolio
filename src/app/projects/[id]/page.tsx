@@ -40,12 +40,41 @@ const projectDetails = ({ params }: {
                 </button>
             </div>
             <div className="w-[90%] mt-6">
-                <h2 className="text-gray-700 text-xl font-bold mb-6 text-center">Introduction</h2>
+                <div className="flex items-center mb-6">
+                    <div className="flex-grow border-t border-gray-400"></div>
+                    <h2 className="text-gray-700 text-xl font-bold mx-4">Introduction</h2>
+                    <div className="flex-grow border-t border-gray-400"></div>
+                </div>
                 <p className="text-justify whitespace-pre-line" dangerouslySetInnerHTML={{ __html: project.introduction || '' }} ></p>
             </div>
             <div className="w-[90%] mt-6">
-                <h2 className="text-gray-700 text-xl font-bold mb-6 text-center">Description</h2>
+                <div className="flex items-center mb-6">
+                    <div className="flex-grow border-t border-gray-400"></div>
+                    <h2 className="text-gray-700 text-xl font-bold mx-4">Description</h2>
+                    <div className="flex-grow border-t border-gray-400"></div>
+                </div>
                 <p className="text-justify whitespace-pre-line" dangerouslySetInnerHTML={{ __html: project.description || '' }} ></p>
+            </div>
+            <div className="w-[90%] mt-6">
+                <div className="flex items-center mb-6">
+                    <div className="flex-grow border-t border-gray-400"></div>
+                    <h2 className="text-gray-700 text-xl font-bold mx-4">Personal Growth</h2>
+                    <div className="flex-grow border-t border-gray-400"></div>
+                </div>
+                <p className="text-justify whitespace-pre-line" dangerouslySetInnerHTML={{ __html: project.personalGrowth || '' }} ></p>
+            </div>
+            <div className="w-[90%] mt-6">
+                <div className="flex items-center mb-6">
+                    <div className="flex-grow border-t border-gray-400"></div>
+                    <h2 className="text-gray-700 text-xl font-bold mx-4">Contributors</h2>
+                    <div className="flex-grow border-t border-gray-400"></div>
+                </div>
+                {!project.contributors ? ''
+                    : project.contributors.map(contributor => {
+                        return (
+                            <p key={contributor} className="text-center" >{contributor}</p>
+                        );
+                    })}
             </div>
         </div>
     );
