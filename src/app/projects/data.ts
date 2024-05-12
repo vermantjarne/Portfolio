@@ -21,7 +21,7 @@ export const projects: Project[] = [
     },
     {
         id: "swimming_club_prototype",
-        title: "Swimming Club Prototype Website",
+        title: "Swimming Club Prototype",
         shortDescription: "An analysis document and prototype for a fictional swimming club, in order for them to digitalize their way of working in the club.",
         imageNames: ["cover", "image-1", "image-2"],
         tags: ["School", "Prototype"],
@@ -40,7 +40,7 @@ export const projects: Project[] = [
         id: "soccer_club",
         title: "Soccer Club Website",
         shortDescription: "A PHP web application for a fictional soccer club named KVV Rauw, in which they are able to view their calendar, sign up for carpools, view photos and more.",
-        imageNames: ["cover", "image-2"],
+        imageNames: ["cover", "image-1", "image-2", "image-3", "image-4", "image-5"],
         tags: ["School", "PHP"],
         introduction:
             `One of my current subjects in school is <strong>Project PHP</strong>. This is a subject with a single main goal: developing the <strong>web application</strong> for a <strong>soccer club</strong> named KVV Rauw, in <strong>PHP</strong>. I am doing so together with 6 other students. The task is the follow-up of the analysis document and prototype made by another group of students. That was made for the same subject as another project I've worked on: <a href="swimming_club_prototype" class="text-blue-700 font-bold">Swimming Club Prototype Website</a>. The knowledge required to create this application was taught to us in a previous subject in class named <strong>Web Applications in PHP</strong>.\n
