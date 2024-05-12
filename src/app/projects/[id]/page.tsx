@@ -1,10 +1,10 @@
 "use client"
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { projects } from "../data";
 import { useState } from "react";
-import { ArrowCircleLeft, ArrowCircleRight, ArrowSquareLeft, ArrowSquareRight } from "@phosphor-icons/react/dist/ssr";
+import { ArrowSquareLeft, ArrowSquareRight } from "@phosphor-icons/react/dist/ssr";
 
-const projectDetails = ({ params }: {
+const ProjectDetails = ({ params }: {
     params: { id: string }
 }) => {
 
@@ -80,4 +80,4 @@ const projectDetails = ({ params }: {
     );
 };
 
-export default projectDetails;
+export default ProjectDetails;

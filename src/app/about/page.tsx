@@ -4,7 +4,7 @@ const about = () => {
             <img src="/images/jarne-vermant.png" alt="Jarne Vermant" className="border-gray-700 border-2 rounded-lg w-80" />
             <div className="flex flex-col gap-5 max-w-lg text-md text-center text-gray-700 text-justify">
                 <p>
-                    I'm a student with <span className="highlight">4.5 years</span> of experience in development.
+                    I&apos;m a student with <span className="highlight">4.5 years</span> of experience in development.
                     I am organized and resourceful, with a determined attitude.
                     My goal is to become a <span className="highlight">full-time developer and designer</span> for <span className="highlight">websites</span> and <span className="highlight">web applications</span>,
                     after acquiring a vast amount of knowledge in diverse programming languages and skills.
