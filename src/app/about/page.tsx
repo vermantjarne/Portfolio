@@ -1,9 +1,9 @@
 const about = () => {
     return (
-        <div className="container flex flex-wrap justify-center gap-20 items-center">
+        <div className="container z-10 flex flex-wrap justify-center gap-10 lg:gap-20 items-center">
             <img src="/images/jarne-vermant.png" alt="Jarne Vermant" className="border-gray-700 border-2 rounded-lg w-80" />
             <div className="relative flex justify-center max-w-lg">
-                <div className="w-[90%] flex flex-col gap-5 text-md text-center text-gray-700 text-justify">
+                <div className="flex flex-col gap-5 text-md text-center text-gray-700 text-justify">
                     <p>
                         I&apos;m a student with <span className="highlight">4.5 years</span> of experience in development.
                         I am organized and resourceful, with a determined attitude.

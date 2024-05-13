@@ -10,12 +10,12 @@ interface Props {
 
 const LargeLink: React.FC<Props> = ({ title, description, href }) => {
     return (
-        <Link href={href} className="block w-full max-w-[400px] bg-gray-200 rounded-lg shadow-lg p-6 transition-transform transform lg:hover:translate-y-[-0.5rem] hover:bg-gray-300">
+        <Link href={href} passHref className="block w-full max-w-[400px] ring-orange-200 ring-2 ring-opacity-50 bg-gradient-to-br from-gray-200 to-orange-100 rounded-lg shadow-lg p-6 transition-transform transform duration-300 hover:scale-105 hover:from-gray-300 hover:to-orange-100">
             <div className="flex items-center justify-between">
-                <p className="text-xl text-gray-800 font-semibold">{title}</p>
-                <ArrowRight className="text-gray-600 w-6 h-6" />
+                <p className="text-2xl text-gray-700 font-semibold">{title}</p>
+                <ArrowRight className="text-gray-700 w-6 h-6" />
             </div>
-            <p className="text-gray-600 mt-2">{description}</p>
+            <p className="text-gray-700 mt-2">{description}</p>
         </Link>
     );
 };

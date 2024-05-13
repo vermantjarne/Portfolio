@@ -1,12 +1,13 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
 import LargeLink from "./components/home/LargeLink";
+import Particles from 'react-tsparticles';
 
 export default function Home() {
   const [greeting, setGreeting] = useState("user");
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const handleInputChange = (event: any) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setGreeting(event.target.value);
   };
 
@@ -18,9 +19,9 @@ export default function Home() {
   }, [greeting]);
 
   return (
-    <div className="container relative flex flex-col justify-center gap-10 pb-[5rem]">
+    <div className="container z-10 relative flex flex-col justify-center gap-10 pb-[5rem]">
       <div className="relative w-full flex justify-center">
-        {greeting === 'user' && (
+        {(["user", ""].includes(greeting)) && (
           <p className='absolute top-[-1.5rem] ml-48 text-blue-500 rotate-6'>Edit me!</p>
         )}
         <p className="relative text-2xl font-bold text-gray-700">
@@ -30,7 +31,7 @@ export default function Home() {
             value={greeting}
             onChange={handleInputChange}
             ref={inputRef}
-            className="w-[52px] text-blue-500 font-bold bg-transparent"
+            className="w-[52px] text-blue-500 font-bold bg-transparent hover:text-orange-600 hover:cursor-pointer focus:cursor-text"
           />
           !
         </p>

@@ -12,7 +12,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({ id, title, description, coverImageSource, tags }) => {
     return (
-        <Link href={`/projects/${id}`} className="bg-gray-200 drop-shadow-lg rounded-lg overflow-hidden hover:rotate-1 hover:translate-y-1.5 hover:scale-95 transition duration-500">
+        <Link href={`/projects/${id}`} className="bg-gradient-to-br from-gray-200 to-orange-100 hover:from-gray-300 hover:to-orange-100 drop-shadow-lg rounded-lg overflow-hidden hover:rotate-1 hover:translate-y-1.5 hover:scale-95 transition duration-500">
             <div className="flex block w-full h-40">
                 <img className="flex-grow object-cover" src={coverImageSource} alt={`Cover image of the project: ${title}`} />
             </div>

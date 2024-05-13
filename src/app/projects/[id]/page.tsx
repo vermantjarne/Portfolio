@@ -27,9 +27,9 @@ const ProjectDetails = ({ params }: {
     };
     
     return (
-        <div className="container lg:max-w-[70%] xl:max-w-[50%] flex flex-wrap flex-col items-center gap-6 text mb-6">
+        <div className="container z-10 lg:max-w-[70%] xl:max-w-[50%] flex flex-wrap flex-col items-center gap-6 text mb-6">
             {/*<img src={`/images/projects/${project.id}/${images[0]}`} className="top-0 absolute w-full h-80 object-cover"/>*/}
-            <h1 className="text-gray-800 text-3xl font-bold mt-6 mb-6">{project.title}</h1>
+            <h1 className="text-center text-gray-800 text-3xl font-bold lg:mt-6">{project.title}</h1>
             <div className="relative w-full h-40 md:h-80 flex justify-center">
                 <img src={`/images/projects/${project.id}/${project.imageNames[currentImageIndex]}.png`} className="w-[90%] h-full object-scale-down"/>
                 <button>
@@ -39,7 +39,7 @@ const ProjectDetails = ({ params }: {
                     <ArrowSquareRight size={32} onClick={handleNext} className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10" />
                 </button>
             </div>
-            <div className="w-[90%] mt-6">
+            <div className="w-full mt-6">
                 <div className="flex items-center mb-6">
                     <div className="flex-grow border-t border-gray-400"></div>
                     <h2 className="text-gray-700 text-xl font-bold mx-4">Introduction</h2>
@@ -47,7 +47,7 @@ const ProjectDetails = ({ params }: {
                 </div>
                 <p className="text-justify whitespace-pre-line" dangerouslySetInnerHTML={{ __html: project.introduction || '' }} ></p>
             </div>
-            <div className="w-[90%] mt-6">
+            <div className="w-full mt-6">
                 <div className="flex items-center mb-6">
                     <div className="flex-grow border-t border-gray-400"></div>
                     <h2 className="text-gray-700 text-xl font-bold mx-4">Description</h2>
@@ -55,7 +55,7 @@ const ProjectDetails = ({ params }: {
                 </div>
                 <p className="text-justify whitespace-pre-line" dangerouslySetInnerHTML={{ __html: project.description || '' }} ></p>
             </div>
-            <div className="w-[90%] mt-6">
+            <div className="w-full mt-6">
                 <div className="flex items-center mb-6">
                     <div className="flex-grow border-t border-gray-400"></div>
                     <h2 className="text-gray-700 text-xl font-bold mx-4">Personal Growth</h2>
@@ -63,7 +63,7 @@ const ProjectDetails = ({ params }: {
                 </div>
                 <p className="text-justify whitespace-pre-line" dangerouslySetInnerHTML={{ __html: project.personalGrowth || '' }} ></p>
             </div>
-            <div className="w-[90%] mt-6">
+            <div className="w-full mt-6">
                 <div className="flex items-center mb-6">
                     <div className="flex-grow border-t border-gray-400"></div>
                     <h2 className="text-gray-700 text-xl font-bold mx-4">Contributors</h2>
