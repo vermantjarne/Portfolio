@@ -10,40 +10,17 @@ const about = () => {
                 const coverImageSource = project.imageNames[0];
 
                 return (
-                    <>
-                        <Card
-                            key={project.id}
-                            id={project.id}
-                            title={project.title}
-                            description={project.shortDescription}
-                            coverImageSource={`/images/projects/${project.id}/${coverImageSource}.png`}
-                            tags={project.tags}
-                        />
-                    </>
+                    <Card
+                        key={project.id}
+                        id={project.id}
+                        title={project.title}
+                        description={project.shortDescription}
+                        coverImageSource={`/images/projects/${project.id}/${coverImageSource}.png`}
+                        tags={project.tags}
+                    />
                 );
             })
             }
-            {/*<Card
-                id="hello"
-                title="Hello"
-                description="This is a test card. I am testing whether the functionality of the card works. Additionally, I am testing the visuals of the card."
-                coverImageSource="/images/jarne-vermant.png"
-                tags={["Analysis", "React"]}
-            />
-            <Card
-                id="hello"
-                title="Hello"
-                description="This is a test card. I am testing whether the functionality of the card works. Additionally, I am testing the visuals of the card."
-                coverImageSource="/images/jarne-vermant.png"
-                tags={["Analysis", "React"]}
-            />
-            <Card
-                id="hello"
-                title="Hello"
-                description="This is a test card. I am testing whether the functionality of the card works. Additionally, I am testing the visuals of the card."
-                coverImageSource="/images/jarne-vermant.png"
-                tags={["Analysis", "React"]}
-            />*/}
         </div>
     );
 };
