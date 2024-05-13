@@ -23,7 +23,12 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <div className="flex flex-col min-h-screen">
           <Navbar />
-          <main className="relative flex flex-grow justify-center min-h-full py-8 px-4" style={{backgroundColor: "#FFFFF7"}}>
+          <main className="relative flex flex-grow justify-center min-h-full py-8 px-4" style={{backgroundColor: "#E2FFF1"}}>
+            <img
+              src="/images/jarne-vermant.png"
+              alt="Background"
+              className="absolute inset-0 z-0 opacity-5 object-cover w-full h-full animate-leftToRight"
+            />
             {children}
           </main>
           <Footer />

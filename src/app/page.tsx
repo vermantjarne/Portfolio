@@ -18,9 +18,11 @@ export default function Home() {
   }, [greeting]);
 
   return (
-    <div className="container flex flex-col justify-center gap-10 pb-[5rem]">
+    <div className="container relative flex flex-col justify-center gap-10 pb-[5rem]">
       <div className="relative w-full flex justify-center">
-        <p className='absolute top-[-1.5rem] ml-48 text-blue-500 rotate-6'>Edit me!</p>
+        {greeting === 'user' && (
+          <p className='absolute top-[-1.5rem] ml-48 text-blue-500 rotate-6'>Edit me!</p>
+        )}
         <p className="relative text-2xl font-bold text-gray-700">
           Greetings, {' '}
           <input
