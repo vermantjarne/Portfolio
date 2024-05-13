@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
 import LargeLink from "./components/home/LargeLink";
-import Particles from 'react-tsparticles';
 
 export default function Home() {
   const [greeting, setGreeting] = useState("user");
